@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
-//@DiscriminatorValue("SA")
+@DiscriminatorValue("SA")
 @Data @NoArgsConstructor @AllArgsConstructor
 public class SavingAccount extends BankAccount{
 
