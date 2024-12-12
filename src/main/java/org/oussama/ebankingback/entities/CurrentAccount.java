@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@DiscriminatorValue("CA")
+//@DiscriminatorValue("CA")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
