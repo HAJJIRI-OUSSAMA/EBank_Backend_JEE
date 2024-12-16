@@ -17,6 +17,7 @@ public class AccountOperation {
     private double amount ;
     @Enumerated(EnumType.STRING) // par defaul => ORDINAL
     private OperationType type;
+    private String description;
     @ManyToOne
     private BankAccount bankAccount;
 
