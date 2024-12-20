@@ -1,25 +1,20 @@
-package org.oussama.ebankingback.entities;
+package org.oussama.ebankingback.dtos;
 
 import jakarta.persistence.*;
+import lombok.*;
+import org.oussama.ebankingback.entities.*;
 import org.oussama.ebankingback.enums.*;
 
 import java.util.*;
 
-import lombok.*;
+@Data
+public class AccountOperationDTO {
 
-@Entity
-@Data @NoArgsConstructor @AllArgsConstructor
-public class AccountOperation {
-
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Date operationDate;
     private double amount ;
-    @Enumerated(EnumType.STRING) // par defaul => ORDINAL
     private OperationType type;
     private String description;
-    @ManyToOne
-    private BankAccount bankAccount;
 
 
 }
